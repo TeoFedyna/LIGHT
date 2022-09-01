@@ -1,10 +1,10 @@
 import './App.css';
-import NavBar from './components/NabVar';
+import Pepe from './components/NabVar';
 
 function App() {
   return (
     <>
-    <NavBar/>
+    <Pepe/>
     <div className="App">
     </div>
     </>
