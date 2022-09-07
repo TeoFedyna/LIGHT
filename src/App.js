@@ -2,7 +2,6 @@ import './App.css';
 import NavBar from './components/NabVar';
 import ItemListContainer from './containers/ItemListContainer';
 import ProductCard from './components/ItemCard';
-//import {useState} from 'react';
 
 function App() {
 
