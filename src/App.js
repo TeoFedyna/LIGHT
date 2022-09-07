@@ -1,6 +1,9 @@
 import './App.css';
-import Pepe from './components/NabVar';
+import NavBar from './components/NabVar';
 import ItemListContainer from './containers/ItemListContainer';
+import ProductCard from './components/ItemCard';
+//import {useState} from 'react';
+
 function App() {
 
   const ropa = ["remeras", "buzos", "pantalones", "camisas",]
@@ -8,9 +11,13 @@ function App() {
   return (
     <>
       <header>
-        <Pepe productos={ropa} />
-        <ItemListContainer greeting={"ILUMINA TU CAMINO!"} />
+        <NavBar productos={ropa} />
+        
       </header>
+      <main>
+      <ItemListContainer greeting={"ILUMINA TU CAMINO!"} />
+      <ProductCard/>
+      </main>
       <div className="App">
       </div>
     </>

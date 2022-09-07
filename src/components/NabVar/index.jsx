@@ -1,8 +1,8 @@
 import React from 'react'
-import CardWidget from '../CartWidget';
-import "./Styles.css"
+import CardWidget from '../CardWidget';
+import "./Styles.css";
 
-function Pepe(props) {
+function NavBar(props) {
   
   // console.log(props);
   
@@ -20,4 +20,4 @@ function Pepe(props) {
   );
 }
 
-export default Pepe
+export default NavBar
