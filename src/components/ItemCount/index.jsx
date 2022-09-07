@@ -11,13 +11,13 @@ function ProductCard() {
 
     const restar =  () => { 
         if (count <= 0) {
-            console.log("pepe");
+            console.log("lo siento, pero no somos una tienda negativa ;)");
         } else {setCount(count-1)} 
     }
 
 const sumar =  () => {
     if (count > stock) {
-        console.log("pepe");
+        console.log("se nos acabo el stock");
     } else {setCount(count+1)} 
 }
 

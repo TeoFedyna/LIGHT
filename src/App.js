@@ -11,7 +11,6 @@ function App() {
     <>
       <header>
         <NavBar productos={ropa} />
-        
       </header>
       <main>
       <ItemListContainer greeting={"ILUMINA TU CAMINO!"} />
