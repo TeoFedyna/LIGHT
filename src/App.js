@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NabVar';
 import ItemListContainer from './containers/ItemListContainer';
-import ProductCard from './components/ItemCount';
+// import ProductCard from './components/ItemCount';
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
         <NavBar/>
       </header>
       <main>
-      <ItemListContainer greeting={"ILUMINA TU CAMINO!"} />
-      <ProductCard/>
+      <ItemListContainer/>
+      {/* <ProductCard/> */}
       </main>
       <div className="App">
       </div>

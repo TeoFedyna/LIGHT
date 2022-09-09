@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import RopaImg from "../../images/musculosa-blanca-frente.jpg"
@@ -40,4 +40,4 @@ const sumar =  () => {
 );
 }
 
-export default ProductCard;
+export default ProductCard;*/
