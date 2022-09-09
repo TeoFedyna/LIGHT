@@ -5,12 +5,12 @@ import ProductCard from './components/ItemCount';
 
 function App() {
 
-  const ropa = ["remeras", "buzos", "pantalones", "camisas",]
+  //const ropa = ["remeras", "buzos", "pantalones", "camisas",]
 
   return (
     <>
       <header>
-        <NavBar productos={ropa} />
+        <NavBar/>
       </header>
       <main>
       <ItemListContainer greeting={"ILUMINA TU CAMINO!"} />
