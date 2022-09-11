@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./styles.css";
+import "./ItemListContainer.css";
 import { products } from "../../data/productos";
 import { useState } from 'react';
-import ItemList from "../../components/ItemList";
+import ItemList from "../../components/ItemList/ItemList";
 
 const ItemListContainer = () => {
 

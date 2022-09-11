@@ -1,6 +1,6 @@
 import React from 'react'
-import CardWidget from '../CardWidget';
-import "./Styles.css";
+import CardWidget from '../CardWidget/CardWidget';
+import "./NavBar.css";
 
 function NavBar(props) {
   
