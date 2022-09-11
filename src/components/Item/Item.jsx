@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import "./Item.css"
 
 const Item = ({product}) => {
     
@@ -24,7 +25,7 @@ const sumar =  () => {
         < Card className="ropaCard" style={{ width: '18rem' }}>
             <Card.Title>{product.nombre}</Card.Title>
             <Card.Body>
-                {product.img ? <Card.Img variant="top" src={product.img}/> : <spam>no image</spam>}
+                {/* {product.img ? <Card.Img variant="top" src={product.img}/> : <span>no image</span>} */}
                 <Card.Text>
                     *descripcion del producto
                 </Card.Text>

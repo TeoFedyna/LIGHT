@@ -4,8 +4,6 @@ import ItemListContainer from './containers/ItemListContainer/ItemListContainer'
 
 function App() {
 
-  //const ropa = ["remeras", "buzos", "pantalones", "camisas",]
-
   return (
     <>
       <header>
