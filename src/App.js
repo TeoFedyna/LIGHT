@@ -7,13 +7,11 @@ function App() {
   return (
     <>
       <header>
-        <NavBar/>
+        <NavBar />
       </header>
       <main>
-      <ItemListContainer/>
+        <ItemListContainer />
       </main>
-      <div className="App">
-      </div>
     </>
   );
 }

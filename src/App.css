@@ -4,32 +4,6 @@
     box-sizing: border-box;
 }
 
-/* ----------HEADER---------- */
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 25px;
-    background-color: deepskyblue;
-}
-
-.navbar p{
-    padding: 8px;
-    background-color: blue;
-    border-radius: 5px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-}
-
-.navbar a {
-
-    text-decoration: none;
-    text-align: center;
-    color: white;
-}
-
 /* ----------MAIN---------- */
 
 .titulo {
