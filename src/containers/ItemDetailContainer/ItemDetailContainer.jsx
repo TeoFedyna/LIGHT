@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
     const [productDetail, setProductDetail] = ({})
@@ -19,9 +20,7 @@ const ItemDetailContainer = () => {
 
     //console.log(productDetail);
 
-    return (
-        <div>ItemDetailContainer</div>
-    )
+    return <ItemDetail prduct={productDetail} alt="product-item"/>
 };
 
 export default ItemDetailContainer
