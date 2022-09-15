@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
     console.log(productDetail);
 
-    return /*<div>pepe</div>*/ <ItemDetail prduct={productDetail} alt="product-item"/>
+    return /*<div>pepe</div>*/ <ItemDetail product={productDetail} alt="product-item"/>
 };
 
 export default ItemDetailContainer;
