@@ -11,7 +11,6 @@ function NavBar(props) {
     <ul className="navbar">
       {/* saco los <a><a/> del navbas temporalmente */}
       <p className="boton">Home</p>
-      <p className="boton">Productos</p>
       <p className="boton">Nosotros</p>
       <CardWidget/>
     </ul>

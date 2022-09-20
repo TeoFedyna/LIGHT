@@ -2,12 +2,15 @@ import React from 'react'
 import Item from '../Item/Item'
 import "./ItemList.css"
 
-const ItemList = ({products}) => {
+const ItemList = ({ products }) => {
     return (
         <div className="productosCards">
-            {products.map((product) => {
-                return <Item key={product.id} product={product}/>
-            })}
+            {products.length ? products.map(product => {
+                return <Item key={product.id} product={product} />
+            })
+                :
+                <h2>Loading...</h2>
+            }
         </div>
     )
 }

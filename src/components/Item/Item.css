@@ -1,3 +1,8 @@
 .ropaCard {
     text-align: center;
 }
+.ropaCard img{
+    object-fit: contain;
+    width: auto;
+    max-width: 100px;
+}
