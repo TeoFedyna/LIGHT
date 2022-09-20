@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Count.css"
-import React, { useState } from 'react'
+import "./ItemCount.css"
+import { useState } from 'react'
 
 function Count() {
     const [count, setCount] = useState(0);
 
-    let stock = product.stock
+    let stock = Count.stock
 
     const restar = () => {
         if (count <= 0) {
@@ -19,10 +19,10 @@ function Count() {
         } else { setCount(count + 1) }
     }
     return (
-    <ListGroup className="list-group-flush">
-        <ListGroup.Item>Cantidad: <button onClick={restar}>-</button> {count} <button onClick={sumar}>+</button></ListGroup.Item>
+    <div className="list-group-flush">
+        <article>Cantidad: <button onClick={restar}>-</button> {count} <button onClick={sumar}>+</button></article>
         <button>Agregar al carrito</button>
-    </ListGroup>
+    </div>
     )
 }
 

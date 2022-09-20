@@ -7,6 +7,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
     <Routes>
       <Route path="/" element={<ItemListContainer/>}/>
       <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
-      <Route path="/detail" element={<ItemDetailContainer/>}/>
+      <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
     </BrowserRouter>
   );

@@ -1,16 +1,21 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import "./Item.css"
+import { useNavigate } from 'react-router-dom';
 
 const Item = ({product}) => {
-    
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate(`/detail/${product.id}`)
+    }
+
     return (
-        < Card className="ropaCard" style={{ width: '18rem' }}>
+        < Card onClick={handleNavigate} className="ropaCard" style={{ width: '18rem' }}>
             <Card.Title>{product.title}</Card.Title>
             <Card.Body>
                 <img src={product.image} alt="imagenProducto"/>
                 <Card.Text>
-                    *descripcion del producto
+                    
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">

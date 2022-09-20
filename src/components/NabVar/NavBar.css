@@ -6,7 +6,7 @@
     background-color: deepskyblue;
 }
 
-.navbar p{
+.boton{
     padding: 8px;
     background-color: blue;
     border-radius: 5px;
@@ -16,7 +16,6 @@
 }
 
 .navbar a {
-
     text-decoration: none;
     text-align: center;
     color: white;
