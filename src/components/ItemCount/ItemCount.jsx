@@ -1,29 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./ItemCount.css"
-import { useState } from 'react'
 
-function Count() {
-    const [count, setCount] = useState(0);
+const ItemCount = ({ stock, initial, onAdd }) => {
+    const [count, setCount] = useState(initial);
 
-    let stock = Count.stock
-
-    const restar = () => {
-        if (count <= 0) {
-            console.log("lo siento, pero no somos una tienda negativa ;)");
-        } else { setCount(count - 1) }
+    const handleAdd = () => {
+        if (count < stock) {
+            setCount(count + 1);
+        } else { console.log("lo siento, pero no somos una tienda negativa ;)") }
     }
 
-    const sumar = () => {
-        if (count >= stock) {
-            alert("se nos acabo el stock");
-        } else { setCount(count + 1) }
+    const handleDecrement = () => {
+        // desarrollo del decremento
     }
+
+    const addCart = () => {
+        onAdd(count);
+        setCount(initial);
+    }
+
+    //montaje del componente
+    useEffect(() => {
+        //El array vacio de dependeicas implica que el callback se ejecutara cuando se MONTA el componente por unica vez.
+        console.log("se monto el item count");
+    }, [])
+
     return (
-    <div className="list-group-flush">
-        <article>Cantidad: <button onClick={restar}>-</button> {count} <button onClick={sumar}>+</button></article>
-        <button>Agregar al carrito</button>
-    </div>
+        <div className="list-group-flush">
+            <article>Cantidad: <button onClick={handleDecrement}>-</button> {count} <button onClick={handleAdd}>+</button></article>
+            <button onClick={addCart}>Agregar al carrito</button>
+        </div>
     )
 }
 
-export default Count
+export default ItemCount
