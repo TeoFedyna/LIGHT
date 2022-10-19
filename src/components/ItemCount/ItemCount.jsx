@@ -19,10 +19,10 @@ function Count() {
         } else { setCount(count + 1) }
     }
     return (
-    <div className="list-group-flush">
-        <article>Cantidad: <button onClick={restar}>-</button> {count} <button onClick={sumar}>+</button></article>
-        <button>Agregar al carrito</button>
-    </div>
+        <div className="list-group-flush">
+            <article>Cantidad: <button onClick={restar}>-</button> {count} <button onClick={sumar}>+</button></article>
+            <button>Agregar al carrito</button>
+        </div>
     )
 }
 
